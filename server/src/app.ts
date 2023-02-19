@@ -7,7 +7,7 @@ import morgan from 'morgan';
 
 // trigger env mode
 import dotenv from 'dotenv';
-dotenv.config();
+dotenv.config(); 
 
 // Trigger ts alias path
 import * as tsconfigPaths from 'tsconfig-paths';
