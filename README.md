@@ -7,3 +7,5 @@
    * Others: OAuth2, SEO (react-helmet), reset password
 
 *How to run*: //
+
+*How to learn*: //
