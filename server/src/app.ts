@@ -14,7 +14,7 @@ import * as tsconfigPaths from 'tsconfig-paths';
 tsconfigPaths.register();
 
 // Composables
-import {test} from '@/controllers/test.controll';
+import useRoutes from '@/routes';
 
 // Application initialize
 const app: Express = express();
@@ -25,9 +25,8 @@ app.use(helmet());
 app.use(compression());
 app.use(morgan('tiny'));
 
-app.get('/', (req: Request, res: Response) => {
-  res.send('Hello, World!1111' + test());
-});
+// Registering routes
+useRoutes(app)
 
 const port = process.env.PORT || 3000;
 
